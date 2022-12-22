@@ -2,7 +2,7 @@
  * It returns the NavbarOne, BodyContent, and FooterOne components
  * @returns The NavbarOne, BodyContent, and FooterOne components are being returned.
  */
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useEffect } from "react";
 import BodyContent from "../../components/home/slider-filter-search";
 import { ConfigDB } from "../../config/themeCustomizerConfig";
@@ -11,9 +11,9 @@ import FooterThree from "../../layout/footers/FooterThree";
 import FooterTwo from "../../layout/footers/FooterTwo";
 import NavbarOne from "../../layout/headers/NavbarOne";
 
-export const getStaticProps = async ({ locale }) => ({
-  props: { ...(await serverSideTranslations(locale, ["common"])) },
-});
+// export const getStaticProps = async ({ locale }) => ({
+//   props: { ...(await serverSideTranslations(locale, ["common"])) },
+// });
 
 const SliderFilterSearch = () => {
   useEffect(() => {
