@@ -40,7 +40,7 @@ const FavoritesTab = () => {
                   <div className={`property-wrapper-grid ${grid.gridStyle ? "list-view" : ""}`}>
                     <GridLayout value={value} grid={grid} gridDispatch={gridDispatch} />
                   </div>
-                  <Pagination toPage={grid.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
+                  <Pagination toPage={grid?.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
                 </div>
               </Container>
             </section>

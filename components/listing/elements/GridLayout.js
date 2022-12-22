@@ -21,7 +21,7 @@ const GridLayout = ({ value, grid, listSize, relativeSlider, video, infiniteScro
     <>
       <Row className={`property-2 column-sm zoom-gallery property-label property-grid ${grid.gridStyle === "list-view" ? "list-view" : ""}`}>
         {showProduct &&
-          showProduct.slice(!infiniteScroll && cardToShow * grid.toPage - cardToShow, cardToShow * grid.toPage).map((data, i) => (
+          showProduct.slice(!infiniteScroll && cardToShow * grid?.toPage - cardToShow, cardToShow * grid?.toPage).map((data, i) => (
             <Fragment key={i}>
               <Col sm={grid.gridStyle === "grid-view" && (grid.gridSize === 3 || 4) && "6"} md={grid.gridStyle === "list-view" && "12"} lg={grid.gridStyle === "grid-view" && ((grid.gridSize === 2 && "6") || ((grid.gridSize === 3 || 4) && "4"))} xl={grid.gridStyle === "list-view" && listSize === 2 && "6"} xxl={grid.gridStyle === "grid-view" && grid.gridSize === 4 && "3"} className={`${grid.gridStyle === "list-view" ? "list-view" : ""} wow fadeInUp grid-view `} key={i}>
                 <PropertyBox data={data} relativeSlider={relativeSlider} video={video} />

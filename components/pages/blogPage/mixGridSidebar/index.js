@@ -73,13 +73,13 @@ const BodyContent = ({ side }) => {
             <Col>
               <Row className="blog-grid ">
                 {value &&
-                  value.slice(grid.toPage * 4 - 4, grid.toPage * 4).map((data, i) => (
+                  value.slice(grid?.toPage * 4 - 4, grid?.toPage * 4).map((data, i) => (
                     <Col md="6" lg={side === "right" || side === "left" ? "6" : "4"} key={i}>
                       <BlogWrapBox data={data} />
                     </Col>
                   ))}
               </Row>
-              <Pagination toPage={grid.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
+              <Pagination toPage={grid?.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
             </Col>
           </Col>
         </Row>

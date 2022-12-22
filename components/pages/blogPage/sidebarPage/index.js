@@ -51,7 +51,7 @@ const BodyContent = ({ side }) => {
             <Row className="blog-grid ">
               {value &&
                 value
-                  .slice(grid.toPage * 6 - 6, grid.toPage * 6)
+                  .slice(grid?.toPage * 6 - 6, grid?.toPage * 6)
                   .map((data, i) => (
                     <Col
                       md="6"
@@ -63,7 +63,7 @@ const BodyContent = ({ side }) => {
                   ))}
             </Row>
             <Pagination
-              toPage={grid.toPage}
+              toPage={grid?.toPage}
               gridDispatch={gridDispatch}
               totalPages={grid.totalPages}
             />

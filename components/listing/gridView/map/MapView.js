@@ -35,7 +35,7 @@ const MapView = (props) => {
           </Col>
           <Col xl="7">
             <GridLayout value={value} gridSize={2} propertyTag={"all"} gridDispatch={gridDispatch} grid={grid} />
-            <Pagination toPage={grid.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
+            <Pagination toPage={grid?.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
           </Col>
         </Row>
       </Container>

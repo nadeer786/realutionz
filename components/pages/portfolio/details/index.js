@@ -103,7 +103,7 @@ const BodyContent = () => {
         </Row>
         <Gallery>
           <Row className=" portfolio-section zoom-gallery-multiple gy-md-4 gy-3 ratio_square">
-            {data.slice(4 * grid.toPage - 4, grid.toPage * 4).map((data, i) => (
+            {data.slice(4 * grid?.toPage - 4, grid?.toPage * 4).map((data, i) => (
               <Col lg="3" sm="6" className="grid-item" key={i}>
                 <div className="grid-box">
                   <div className="overlay">
@@ -124,7 +124,7 @@ const BodyContent = () => {
         </Gallery>
         <Row>
           <Col lg="12">
-            <Pagination toPage={grid.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
+            <Pagination toPage={grid?.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
           </Col>
         </Row>
       </Container>

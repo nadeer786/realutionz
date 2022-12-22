@@ -58,11 +58,11 @@ const GridView = ({ side, size, gridType, listSize, mapModal, mapView, relativeS
               <GridLayout grid={grid} myList={myList} value={value} listSize={listSize} relativeSlider={relativeSlider} video={video} gridDispatch={gridDispatch} infiniteScroll={infiniteScroll} />
             </div>
             {infiniteScroll ? (
-              <a className="btn btn-solid btn-flat load-more" onClick={() => gridDispatch({ type: "toPage", payload: grid.toPage + 0.5 })}>
+              <a className="btn btn-solid btn-flat load-more" onClick={() => gridDispatch({ type: "toPage", payload: grid?.toPage + 0.5 })}>
                 load more
               </a>
             ) : (
-              <Pagination toPage={grid.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
+              <Pagination toPage={grid?.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
             )}
           </Col>
         </Row>

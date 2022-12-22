@@ -45,7 +45,7 @@ const BodyContent = ({ side }) => {
           <Col xl={side ? "9" : "12"} lg={side ? "8" : "12"}>
             <Row className="blog-list ">
               {value &&
-                value.slice(grid.toPage * 4 - 4, grid.toPage * 4).map((data, i) => (
+                value.slice(grid?.toPage * 4 - 4, grid?.toPage * 4).map((data, i) => (
                   <Col md="12" key={i}>
                     <div className="blog-wrap wow fadeInUp">
                       <div className={`blog-image ${i % 2 !== 0 ? "order-md-1" : ""} `}>
@@ -70,7 +70,7 @@ const BodyContent = ({ side }) => {
                   </Col>
                 ))}
             </Row>
-            <Pagination toPage={grid.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
+            <Pagination toPage={grid?.toPage} gridDispatch={gridDispatch} totalPages={grid.totalPages} />
           </Col>
         </Row>
       </Container>
