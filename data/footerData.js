@@ -33,11 +33,10 @@ export const FooterData = {
   usefulLinks: {
     title: "Useful Links",
     children: [
-      { title: "About us", link: "/pages/other-pages/about-us-2" },
-      { title: "New Arrivals", link: "/listing/grid-view/2-grid/left-sidebar" },
-      { title: "Agency", link: "/pages/agency/agency-grid" },
-      { title: "Faq", link: "/pages/other-pages/faq" },
-      { title: "Contact", link: "/contact/contact-us-2" },
+      { title: "About us", link: "/aboutus" },
+      { title: "Contact Us", link: "/contact-us" },
+      { title: "Careers", link: "/careers" },
+      { title: "Blogs", link: "/blogs" },
     ],
   },
   feature: {

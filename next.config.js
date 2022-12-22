@@ -21,6 +21,6 @@ module.exports = withPWA({
   env: {
     API_URL: "https://www.realutionz.com/api/v1",
     // API_URL: "http://realutionzservices-staging.realutionz.com/api/v1",
-    LOCAL_API_URL: "/ApiData/api",
+    LOCAL_API_URL: "https://proud-rock-017f7ed10.2.azurestaticapps.net/api",
   },
 });

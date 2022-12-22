@@ -43,11 +43,11 @@ const HomeBannerSection = () => {
                         {...homeSlider1}
                       >
                         <HomeSliderContent
-                          img="/assets/images/signature/2.png"
-                          mainTitle="Realutionz Properties solve your problems"
+                          // img="/assets/images/signature/2.png"
+                          mainTitle="𝐑𝐞𝐚𝐥𝐮𝐭𝐢𝐨𝐧𝐳 Properties, Your One Stop Land Matter Experts"
                         />
                         <HomeSliderContent
-                          img="/assets/images/signature/1.png"
+                          // img="/assets/images/signature/1.png"
                           mainTitle="Properties Seller"
                         />
                       </Slider>

@@ -26,7 +26,7 @@ const SubFooterTwo = () => {
                 <Link href="/cancellation-refund-policy">Cancellation & refund policy</Link>
               </li>
               <li>
-                <Link href="/contact/contact-us-2">Contact</Link>
+                <Link href="contact-us">Contact</Link>
               </li>
             </ul>
           </div>

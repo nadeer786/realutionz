@@ -58,7 +58,7 @@ function MyApp({ Component, pageProps }) {
       <Provider store={store}>
         <>
           <Component {...pageProps} />
-          <Customizer />
+          {/* <Customizer /> */}
           <TapToTop />
           <StoreOldData />
           <ToastContainer
