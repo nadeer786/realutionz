@@ -1,0 +1,71 @@
+/**
+ * It takes in an array of objects and returns a slider with each object as a slide
+ * @returns A component that renders a section with a title, a slider, and a pricing box.
+ */
+import React from "react";
+import Slider from "react-slick";
+import { Col, Container, Row } from "reactstrap";
+import { LatestPropertyDetail,pricingPlan } from "../../constValues/constValues";
+import { AppPropertyData } from "../../data/appPropertyData";
+import { pricingSlider } from "../../data/slickSlider";
+import NoSsr from "../../utils/NoSsr";
+// import PricingSection from "../home/corporate/Pricing";
+import JobSection from "./jobSection";
+
+const BodyContent = ({ value }) => {
+  return (
+    <>
+    <JobSection value={AppPropertyData.PricingPlan} />
+    </>
+    // <section className="pricing-section slick-between slick-shadow">
+    //   <Container>
+    //     <Row>
+    //       <Col>
+    //         <div className="title-3">
+    //           <svg className="title-svg">
+    //             {/* <use xlinkHref="/assets/svg/icons.svg#title-line"></use> */}
+    //           </svg>
+    //           {/* <h2 dangerouslySetInnerHTML={{ __html: pricingPlan }}></h2> */}
+    //           <h1>Join Us!</h1>
+    //           {/* <p className="font-roboto">{LatestPropertyDetail}</p> */}
+    //           <p className="font-roboto">{LatestPropertyDetail}</p>
+    //         </div>
+    //         <JobSection value={AppPropertyData.PricingPlan} />
+    //         {/* <NoSsr>
+    //           <Slider className="pricing-slider" {...pricingSlider}>
+    //             {value &&
+    //               value.map((data, i) => (
+    //                 <div key={i}>
+    //                   <div className="pricing-box">
+    //                     <div className="pricing-details">
+    //                       <div className="pricing-icon">
+    //                         <svg className="pricing-svg">
+    //                           <use xlinkHref={data.img}></use>
+    //                         </svg>
+    //                       </div>
+    //                       <h3>{data.title}</h3>
+    //                       <p className="font-roboto">{data.details}</p>
+    //                     </div>
+    //                     <ul>
+    //                       {data.moreDetails.map((detail, i) => (
+    //                         <li key={i}>{detail}</li>
+    //                       ))}
+    //                     </ul>
+    //                     <div className="price">
+    //                       <span className="label label-light label-flat">Month</span>
+    //                       <h4>${data.price}</h4>
+    //                       <span className="light-text">Per</span>
+    //                     </div>
+    //                   </div>
+    //                 </div>
+    //               ))}
+    //           </Slider>
+    //         </NoSsr> */}
+    //       </Col>
+    //     </Row>
+    //   </Container>
+    // </section>
+  );
+};
+
+export default BodyContent;
