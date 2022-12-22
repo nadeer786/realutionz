@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { loadAnimation } from "lottie-web";
-import { defineLordIconElement } from "lord-icon-element";
+// import { loadAnimation } from "lottie-web";
+// import { defineLordIconElement } from "lord-icon-element";
 import { FrameGrid } from "@egjs/react-grid";
 import { Col, Container, Row } from "reactstrap";
 import { Gallery, Item } from "react-photoswipe-gallery";
@@ -11,7 +11,7 @@ import Img from "../../../../utils/BackgroundImageRatio";
 const BodyContent = ({ size }) => {
   const [filterData, setFilterData] = useState(gridData.slice(0, `${size === "small" ? "12" : "13"}`));
   const [isActive, setIsActive] = useState("all");
-  defineLordIconElement(loadAnimation);
+  // defineLordIconElement(loadAnimation);
   return (
     <section className="portfolio-section portfolio-grid creative-3">
       <Container>

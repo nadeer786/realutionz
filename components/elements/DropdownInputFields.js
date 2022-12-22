@@ -12,7 +12,7 @@ import {
   DropdownMenu,
   DropdownToggle,
 } from "reactstrap";
-import { InputForm, ServiceReqEnquiryInputForms } from "../../data/inputForm";
+import { InputForm } from "../../data/inputForm";
 
 const DropdownInputFields = ({
   label,
@@ -100,7 +100,7 @@ const RequestDropdownInputFields = ({
 
   return (
     <>
-      {ServiceReqEnquiryInputForms.slice(
+      {InputForm.slice(
         `${start && start}`,
         `${end && end}`
       )?.map((value, i) => (

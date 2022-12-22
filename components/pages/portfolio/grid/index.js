@@ -5,8 +5,8 @@
  * function.
  */
 import React, { useState } from "react";
-import { loadAnimation } from "lottie-web";
-import { defineLordIconElement } from "lord-icon-element";
+// import { loadAnimation } from "lottie-web";
+// import { defineLordIconElement } from "lord-icon-element";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { Col, Container, Row } from "reactstrap";
 import Link from "next/link";
@@ -17,7 +17,7 @@ import FilterPanel from "./FilterPanel";
 const BodyContent = ({ gridClass, title, size }) => {
   const [filterData, setFilterData] = useState(gridData.slice(0, size));
   const [isActive, setIsActive] = useState("all");
-  defineLordIconElement(loadAnimation);
+  // defineLordIconElement(loadAnimation);
   return (
     <section className="portfolio-section portfolio-grid">
       <Container>
