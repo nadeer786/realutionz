@@ -11,7 +11,10 @@ const withPWA = require("next-pwa")({
 
 module.exports = withPWA({
   reactStrictMode: false,
-  i18n,
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "ml"],
+  },
   env: {
     API_URL: "https://www.realutionz.com/api/v1",
     // API_URL: "http://realutionzservices-staging.realutionz.com/api/v1",
