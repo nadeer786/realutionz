@@ -15,6 +15,9 @@ module.exports = withPWA({
   //   defaultLocale: "en",
   //   locales: ["en", "ml"],
   // },
+  images: {
+    unoptimized: true,
+  },
   env: {
     API_URL: "https://www.realutionz.com/api/v1",
     // API_URL: "http://realutionzservices-staging.realutionz.com/api/v1",
