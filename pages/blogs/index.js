@@ -5,7 +5,7 @@
  * ...(await serverSideTranslations(locale, ['common']))
  */
 import React from "react";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Breadcrumb from "../../layout/Breadcrumb/Breadcrumb";
 import BodyContent from "../../components/pages/blogPage/sidebarPage";
 import FooterThree from "../../layout/footers/FooterThree";
@@ -14,9 +14,9 @@ import NavbarOne from "../../layout/headers/NavbarOne";
 import Breadcrumb3 from "../../layout/Breadcrumb/Breadcrumb3";
 import Breadcrumb4 from "../../layout/Breadcrumb/Breadcrumb4";
 
-export const getStaticProps = async ({ locale }) => ({
-  props: { ...(await serverSideTranslations(locale, ["common"])) },
-});
+// export const getStaticProps = async ({ locale }) => ({
+//   props: { ...(await serverSideTranslations(locale, ["common"])) },
+// });
 
 const Blogs = () => {
   return (

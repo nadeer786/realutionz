@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "reactstrap";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import NavbarOne from "../../layout/headers/NavbarOne";
 import FooterThree from "../../layout/footers/FooterThree";
 import NavbarThree from "../../layout/headers/NavbarThree";
 import Breadcrumb from "../../layout/Breadcrumb/Breadcrumb";
 
-export const getStaticProps = async ({ locale }) => ({
-  props: { ...(await serverSideTranslations(locale, ["common"])) },
-});
+// export const getStaticProps = async ({ locale }) => ({
+//   props: { ...(await serverSideTranslations(locale, ["common"])) },
+// });
 
 const TermsAndConditions = () => {
   const [active, setActive] = useState("1");
